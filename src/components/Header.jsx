@@ -175,6 +175,7 @@ const Nav = styled.nav`
      bottom: 0;
      background: white;
      width: 100%;
+     z-index: 100;
    }
 `;
 
@@ -229,8 +230,14 @@ const NavList = styled.li`
         right: 24px;
      }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       min-width: 75px;
+    }
+    @media (max-width: 450px) {
+      min-width: 65px;
+    }
+    @media (max-width: 350px) {
+      min-width: 55px;
     }
    }
    &:hover, &:active{
@@ -257,7 +264,7 @@ const SignOut = styled(NavList)`
    @media (max-width: 767px) {
      position: absolute;
      top: -45px;
-     right: 15px;
+     right: -15px;
      background: #eee;
   }
 `;

@@ -204,8 +204,6 @@ const Content = styled.div`
     width: 80%;
     max-height: 75%;
     top: 15%;
-    left: 40%;
-    transform: translateX(-50%);
   }
 
   button {
